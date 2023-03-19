@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.popup{
+width: 350px;
+}
+.popup :where(.picker, .all-colors, header, .color){
+    display: flex;
+    align-items: center;
+}
+.popup .picker{
+    background-color: #e3f2fd;
+    padding: 30px 0;
+    justify-content: center;
+}
+
+.picker #color-picker {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #5372f0;
+}
+
+.picked-color{
+    margin: 10px 15px;
+}
+
+.picked-color.hide{
+    display: none;
+}
+
+.picked-color header{
+    justify-content: space-between;
+}
+
+.picked-color .clear-all{
+    color: #5372f0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.all-colors{
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.all-colors .color{
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: calc(100% /3);
+}
+
+.all-colors .color .react{
+    display: block;
+    height: 22px;
+    width: 22px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+.all-colors .color .value{
+    font-size:  0.96rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
